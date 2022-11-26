@@ -67,12 +67,12 @@ export default function TextForm(props) {
           rows="8"
           style={{backgroundColor : props.mode === 'dark' ? '#183244' : 'white', color : props.mode === 'dark' ? 'white' : '#6c767d'}}
         ></textarea>
-        <button className="btn btn-primary mx-2" onClick={handleUpperClick}>Conevrt to Upper case</button>
-        <button className="btn btn-primary mx-2" onClick={handleLowerClick}>Conevrt to Lower case</button>
-        <button className="btn btn-primary mx-2" onClick={handleClrClick}>Clear Text</button>
-        <button className="btn btn-primary mx-2" onClick={handleExtraSpaceClick}>Remove Extra Spaces</button>
-        <button className="btn btn-primary mx-2" onClick={handleCopyClick}>Copy Text</button>
-        <button className="btn btn-primary mx-2" onClick={handleCamelClick}>Convert To Camel Case</button>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleUpperClick}>Conevrt to Upper case</button>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleLowerClick}>Conevrt to Lower case</button>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleClrClick}>Clear Text</button>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleExtraSpaceClick}>Remove Extra Spaces</button>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleCopyClick}>Copy Text</button>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleCamelClick}>Convert To Camel Case</button>
       </div>
       </div>
 
