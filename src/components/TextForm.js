@@ -27,9 +27,7 @@ export default function TextForm(props) {
   }
 
   const handleCopyClick = () => {
-    let newText = document.getElementById("myBox");
-    newText.select();
-    navigator.clipboard.writeText(newText.value);
+    navigator.clipboard.writeText(text);
     props.showAlert("Text Copied to Clipboard", "success");
   }
 
@@ -78,7 +76,7 @@ export default function TextForm(props) {
 
       <div className="container">
         <h1>Your text summary</h1>
-        <p>{text.split(" ").filter(function(n) {return n !== '' }).length} Words and {text.length} Charecters</p>
+        <p>{text.split(/\s+/).filter(function(n) {return n !== '' }).length} Words and {text.length} Charecters</p>
         <p>{0.008 * text.split(" ").length} Minutes to take read the text </p>
         <h2>Preview</h2>
         <p>{text.length>0 ? text : "Enter your text to preview"}</p>
